@@ -1,0 +1,190 @@
+@font-face {
+  font-family: HoltwoodOneSC;
+  src: url("../../assets/fonts/Holtwood_One_SC/HoltwoodOneSC.ttf"); 
+}
+
+@font-face {
+  font-family: Lobster;
+  src: url("../../assets/fonts/Lobster/Lobster.ttf"); 
+}
+
+* {
+  box-sizing: border-box; 
+}
+
+html, body {
+  height: 100%;
+  width: 100%; 
+  background: url("../img/bg-dark.jpg");
+  background-size: cover;
+}
+
+h1 {
+	color: #fff;
+	font-family: Lobster;
+	font-size: 80px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+h2 {
+	font-family: HoltwoodOneSC;
+	font-size: 40px;
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+}
+
+h3 {
+	font-family: HoltwoodOneSC;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #fff;
+	margin-top: 50px;
+}
+
+h4 {
+	font-family: helvetica, arial, sans-serif;
+	font-size: 21px;
+	color: #fff;
+}
+
+h5 {
+	color: #fff;
+	font-family: Lobster;
+	margin: 50px 0px;
+	font-size: 50px;
+}
+
+p {
+	font-family: helvetica, arial, sans-serif;
+	font-size: 14px;
+	color: #bf9280;
+}
+
+
+#carousel-example-generic {
+    height: 360px;
+    background: #130900 ;
+    border-top: #5e3c2f ;
+    border-bottom: #3c271e ;
+}
+
+
+.menu {
+	margin-top: -35px;
+}
+
+.images {
+	margin-top: 20px;
+
+}
+
+.footer {
+	background: black;
+	width: 100%;
+	color: #fff;
+}
+
+.tea {
+	text-align: right;
+}
+
+.address-mobile {
+	text-align: center;
+	list-style-type: none;
+    position: absolute;
+    width: 40%;
+    left: 50%;
+    top: 25%;
+    height: 10%;
+    padding-left: 0px;
+    background: rgba(0,0,0,0.6);
+
+
+    .map-button {
+    	width: 100%;
+    	margin-top: 20px;
+    }
+
+    .address_items_large {
+    	color: white;
+    	font-size: 20px;
+    	margin-bottom: 20px;
+    }
+
+    .address_items {
+    	color: white;
+    	margin-bottom: 5px;
+    }
+}
+
+.address-small {
+	list-style-type: none;
+	font-size: 12px;
+}
+
+
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: $screen-sm) {  
+
+	.carousel,
+	.todays-menu {
+		display: none;
+	}
+
+	.tea {
+		text-align: left;
+	}
+
+}
+
+@media (min-width: $screen-sm) {  
+
+
+	.address-small {
+		text-align: right;
+		margin-top: 55px;
+	}
+
+
+}
+
+@media (min-width: $screen-md) {  
+
+	.mobile-header {
+		display: none;
+	}
+	.address-mobile {
+		display:none;
+	}
+
+	.carousel,
+	.todays-menu {
+		visibility: visible;
+	}
+
+
+	.images {
+
+		margin-top: 65px;
+
+
+		.tshirt-img,
+		.beans-img {
+			border: 10px solid #ceb9b4;
+			margin-top: 15px;
+
+		}
+	}
+
+	.tea {
+		text-align: right;
+	}
+}
+@media (max-width:$screen-md) {
+	.address {
+		display:none;
+	}
+}
